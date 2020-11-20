@@ -9,7 +9,9 @@
 [license-url]: https://opensource.org/licenses/MIT
 [license-image]: https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github
 
+
 ##Description
+
 <i>When we have something to handle our money, it's always easy to know when you should stop spend and control your self. App to control how much you are spending, how much do you still have left</i>
 
 
