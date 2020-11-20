@@ -1,5 +1,4 @@
-<h3>💲 Money Control Application 💸</h3>
-<hr/>
+<h1>💲 Money Control Application 💸</h1>
 
 [![Technology][vue-image]][vue-url]  
 [![License][license-image]][license-url]
