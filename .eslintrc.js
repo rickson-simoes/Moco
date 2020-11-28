@@ -20,6 +20,7 @@ module.exports = {
     'no-return-assign': 'off',
     'import/extensions': 'off',
     'no-param-reassign': 'off',
-    'no-alert': 'warn'
+    'no-alert': 'warn',
+    'no-unused-vars': 'warn'
   },
 };
