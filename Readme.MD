@@ -1,12 +1,18 @@
 <h1>💲 Money Control Application 💸</h1>
 
 [![Technology][vue-image]][vue-url]  
+[![Package][bootstrap]][bootstrap-url]  
 [![License][license-image]][license-url]
+
 
 [vue-url]: https://vuejs.org/
 [vue-image]: https://img.shields.io/badge/Vue-cli-green?style=for-the-badge&logo=vue.js
+
 [license-url]: https://opensource.org/licenses/MIT
 [license-image]: https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github
+
+[bootstrap-url]: https://getbootstrap.com/
+[bootstrap]: https://img.shields.io/badge/Vue-Vue%20Bootstrap-brightgreen?style=for-the-badge&logo=bootstrap
 
 
 <h2>Description</h2>
