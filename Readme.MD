@@ -12,7 +12,7 @@
 [license-image]: https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github
 
 [bootstrap-url]: https://getbootstrap.com/
-[bootstrap]: https://img.shields.io/badge/Vue-Vue%20Bootstrap-brightgreen?style=for-the-badge&logo=bootstrap
+[bootstrap]: https://img.shields.io/badge/Bootstrap-Vue-brightgreen?style=for-the-badge&logo=bootstrap
 
 
 <h2>Description</h2>
