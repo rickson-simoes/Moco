@@ -3,24 +3,9 @@
     <b-container fluid='md'>
 
 <!-- Container para exibir informações do app -->
-      <b-media>
-        <template #aside>
-          <img src='./assets/guy-logo-finances.svg' width="380px"/>
-        </template>
-
-        <h5 class='mt-4'>MoCo - Money Control</h5>
-        <i>
-          <p class='mt-4'>
-          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
-          Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc
-          ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </p>
-          <p>
-            Donec sed odio dui. Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque
-            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-          </p>
-        </i>
-      </b-media>
+        <div class="text-center mb-5">
+          <img src='./assets/money-trees.png' width="400px"/>
+        </div>
 
 <!-- Container para inserir informações -->
       <b-form @submit.prevent="onSubmit">
@@ -46,7 +31,7 @@
           type="number"
           placeholder="Parcelas"></b-form-input>
 
-        <b-button type="submit" variant="primary">Submit</b-button>
+        <b-button type="submit" variant="success" >Submit</b-button>
         <b-button class='ml-4' type="reset" variant="danger" @click="clearFields()">Reset</b-button>
         <p/>
         <b-badge>Total : {{total}}</b-badge>
@@ -114,5 +99,9 @@ export default {
 </script>
 
 <style lang="scss">
+// cOLOR #84c226;
+// cOLOR #1f1a17;
+// cOLOR #00763a;
+// cOLOR #00a13a;
 
 </style>
