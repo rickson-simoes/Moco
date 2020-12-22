@@ -10,7 +10,7 @@
 
 body {
   /* color: white; */
-  /* background: linear-gradient(160deg, rgb(238, 240, 238), rgb(69, 139, 55) 10%, rgb(221, 238, 220), rgb(221, 238, 220) 0%)fixed; */
+  background: linear-gradient(160deg, rgb(238, 240, 238) 0%, rgb(164, 238, 149) 0%, rgb(221, 238, 220) 20%, rgb(221, 238, 220) 100%)fixed;
   -webkit-font-smoothing: antialiased;
 }
 
