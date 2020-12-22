@@ -98,9 +98,11 @@ export default {
       this.form.productParcels = '';
     },
     sumTotal() {
-      this.total = this.list
+      this.total = Math.round(this.list
         .map(({ value }) => value)
-        .reduce((ttl, uni) => ttl + uni, 0);
+        .reduce((ttl, uni) => ttl + uni, 0));
+
+      localStorage.setItem('@Moco-TotalPrice', this.total);
     },
     Delete(index) {
       this.list.splice(index, 1);
@@ -110,13 +112,23 @@ export default {
     Edit() {
       // this.list.splice
     },
+    localStorageItems() {
+      const getMocoItems = localStorage.getItem('@Moco-items');
+      const setParsedMocoItems = JSON.parse(getMocoItems);
+
+      this.list = setParsedMocoItems;
+    },
   },
   created() {
-    const getMocoItems = localStorage.getItem('@Moco-items');
-    const setParsedMocoItems = JSON.parse(getMocoItems);
-
-    this.list = setParsedMocoItems;
+    this.localStorageItems();
+    this.sumTotal();
   },
+  // watch: {
+  //   list: {
+  //     deep: true,
+  //     handler:
+  //   }
+  // }
 };
 </script>
 
