@@ -50,9 +50,9 @@
               <b-list-group class='mb-2' v-for="(items, index) in list" :key='index' horizontal>
                 <b-list-group-item @click="Delete(index)"> <b-icon icon='trash' title="Delete"/> </b-list-group-item>
                 <b-list-group-item @click="Edit()"> <b-icon icon='pencil' title="Edit"/> </b-list-group-item>
-                <b-list-group-item class='flex-fill bg-light'>{{items.productName}}</b-list-group-item>
-                <b-list-group-item class='flex-fill bg-light'>{{items.value}}</b-list-group-item>
-                <b-list-group-item class='flex-fill bg-light'>{{items.productParcels}}</b-list-group-item>
+                <b-list-group-item style='width: 300px;' class='flex-fill bg-light'>{{items.productName}}</b-list-group-item>
+                <b-list-group-item style='width: 50px; padding:5px 5px;' class='flex-fill bg-light'>{{items.value}}</b-list-group-item>
+                <b-list-group-item style='width: 20px;' class='flex-fill bg-light'>{{items.productParcels}}</b-list-group-item>
               </b-list-group>
             </template>
           </div>
