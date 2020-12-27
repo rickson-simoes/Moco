@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <b-container fluid='sm'>
+    <div class='flex-class'>
       <!-- Container para exibir informações do app -->
       <b-row>
-        <b-col>
+        <b-col class='ml-3'>
           <img src='./assets/money-trees.png' width="400px"/>
         </b-col>
 
       <!-- Container para inserir informações -->
-        <b-col>
+        <b-col class='listagem-items'>
           <b-form @submit.prevent="onSubmit">
             <b-form-input
               class='mb-2'
@@ -58,7 +58,7 @@
           </div>
         </b-col>
       </b-row>
-    </b-container>
+    </div>
   </div>
 </template>
 
@@ -137,5 +137,16 @@ export default {
 // cOLOR #1f1a17;
 // cOLOR #00763a;
 // cOLOR #00a13a;
+
+.flex-class {
+  display:flex;
+}
+
+.listagem-items {
+    border: 1px solid #04783d;
+    border-radius: 10px;
+    padding: 10px;
+    background: #98a597;
+}
 
 </style>
