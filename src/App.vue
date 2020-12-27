@@ -143,7 +143,7 @@ export default {
 }
 
 .listagem-items {
-    border: 1px solid #04783d;
+    border: 1px solid #c2e094;
     border-radius: 10px;
     padding: 10px;
     background: #98a597;
