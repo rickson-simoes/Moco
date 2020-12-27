@@ -35,7 +35,7 @@
             <b-button type="submit" variant="success" >Submit</b-button>
             <b-button class='ml-4' type="reset" variant="danger" @click="clearFields()">Reset</b-button>
             <p/>
-            <b-badge>Total : {{total}}</b-badge>
+            <h5><b-badge>Total : {{total}}</b-badge></h5>
           </b-form>
 
           <!-- Container para exibir a lista de itens inseridos -->
@@ -112,9 +112,13 @@ export default {
     Edit() {
       // this.list.splice
     },
+    localStorageClearItems() {
+      // Clear all localStorage fields
+      localStorage.clear('@Moco-items');
+    },
     localStorageItems() {
       const getMocoItems = localStorage.getItem('@Moco-items');
-      const setParsedMocoItems = JSON.parse(getMocoItems);
+      const setParsedMocoItems = JSON.parse(getMocoItems).reverse();
 
       this.list = setParsedMocoItems;
     },
@@ -123,12 +127,6 @@ export default {
     this.localStorageItems();
     this.sumTotal();
   },
-  // watch: {
-  //   list: {
-  //     deep: true,
-  //     handler:
-  //   }
-  // }
 };
 </script>
 
