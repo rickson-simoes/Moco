@@ -57,10 +57,10 @@
               <template v-else>
                 <b-list-group class='mb-2 d-flex' v-for="(items, index) in list" :key='index' horizontal>
                   <b-list-group-item @click="Delete(index)"> <b-icon icon='trash' title="Delete" variant="danger"/> </b-list-group-item>
-                  <b-list-group-item @click="Edit()"> <b-icon icon='pencil' title="Edit"/> </b-list-group-item>
-                  <b-list-group-item class='w-100 bg-light'>{{items.productName}}</b-list-group-item>
-                  <b-list-group-item class='w-25 bg-light'>{{items.value}}</b-list-group-item>
-                  <b-list-group-item class='text-center bg-light'>{{items.productParcels}}</b-list-group-item>
+                  <b-list-group-item @click="Edit()"> <b-icon icon='pencil-fill' title="Edit" variant="secondary" /> </b-list-group-item>
+                  <b-list-group-item class='bg-background-list w-100'>{{items.productName}}</b-list-group-item>
+                  <b-list-group-item class='w-25 bg-background-list'>{{items.value}}</b-list-group-item>
+                  <b-list-group-item class='text-center bg-background-list'>{{items.productParcels}}</b-list-group-item>
                 </b-list-group>
               </template>
             </div>
@@ -147,5 +147,10 @@ export default {
 
 .bg-background-smooth-green {
   background: var(--SmoothGreen);
+}
+
+.bg-background-list {
+  background: #6aad7a;
+  color: white;
 }
 </style>
