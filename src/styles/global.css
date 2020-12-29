@@ -10,6 +10,15 @@
 
 body {
   /* color: white; */
-  background: linear-gradient(160deg, rgb(238, 240, 238) 0%, rgb(79, 175, 60) 5%, rgb(221, 238, 220) 20%, rgb(221, 238, 220) 100%)fixed;
+  /* background: linear-gradient(160deg, rgb(238, 240, 238) 0%, rgb(157, 233, 142) 5%, rgb(221, 238, 220) 20%, rgb(221, 238, 220) 100%)fixed; */
+  background: url("../assets//bg-green-pds.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  --SmoothGreen: #cdebc5;
 }
