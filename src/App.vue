@@ -89,7 +89,7 @@ export default {
     onSubmit() {
       const { productName, value, productParcels } = this.form;
 
-      this.list.push({
+      this.list.unshift({
         productName,
         value: Number(value),
         productParcels,
@@ -117,6 +117,8 @@ export default {
       this.list.splice(index, 1);
 
       localStorage.setItem('@Moco-items', JSON.stringify(this.list));
+
+      this.sumTotal();
     },
     Edit() {
       // this.list.splice
@@ -127,7 +129,7 @@ export default {
     },
     localStorageItems() {
       const getMocoItems = localStorage.getItem('@Moco-items');
-      const setParsedMocoItems = JSON.parse(getMocoItems).reverse();
+      const setParsedMocoItems = JSON.parse(getMocoItems);
 
       this.list = setParsedMocoItems;
     },
