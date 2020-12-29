@@ -7,13 +7,9 @@
     </b-navbar-brand>
   </b-navbar>
 
-    <b-container fluid="lg">
+    <b-container fluid="sm">
       <!-- Container para exibir informações do app -->
-      <b-row class="text-center">
-        <!-- <b-col cols='1'>
-          <img src='./assets/money-trees.png' width='400px'/>
-        </b-col> -->
-
+      <b-row>
         <!-- Container para inserir informações -->
         <b-col>
           <b-card border-variant="success" class='bg-background-smooth-green'>
@@ -40,8 +36,8 @@
                 type="number"
                 placeholder="Parcels"></b-form-input>
 
-              <b-button type="submit" variant="success">Submit</b-button>
-              <b-button class='ml-4' type="reset" variant="danger" @click="clearFields()">Reset</b-button>
+              <b-button class='mr-4 mt-2' type="submit" variant="success">Submit</b-button>
+              <b-button class='mt-2' type="reset" variant="danger" @click="clearFields()">Reset</b-button>
               <p/>
               <h5><b-badge variant="success">Total : {{total}}</b-badge></h5>
             </b-form>
@@ -49,7 +45,7 @@
         </b-col>
 
           <!-- Container para exibir a lista de itens inseridos -->
-        <b-col cols="7">
+        <b-col cols="8">
           <b-card border-variant="success" class='bg-background-smooth-green'>
             <div class='mt-3'>
               <template v-if='list.length === 0'>
@@ -59,7 +55,7 @@
               </template>
 
               <template v-else>
-                <b-list-group class='mb-2' v-for="(items, index) in list" :key='index' horizontal>
+                <b-list-group class='mb-2 d-flex' v-for="(items, index) in list" :key='index' horizontal>
                   <b-list-group-item @click="Delete(index)"> <b-icon icon='trash' title="Delete" variant="danger"/> </b-list-group-item>
                   <b-list-group-item @click="Edit()"> <b-icon icon='pencil' title="Edit"/> </b-list-group-item>
                   <b-list-group-item class='w-100 bg-light'>{{items.productName}}</b-list-group-item>
