@@ -45,7 +45,7 @@
         </b-col>
 
           <!-- Container para exibir a lista de itens inseridos -->
-        <b-col cols="8">
+        <b-col>
           <b-card border-variant="success" class='bg-background-smooth-green'>
             <div class='mt-3'>
               <template v-if='list.length === 0'>
@@ -55,12 +55,12 @@
               </template>
 
               <template v-else>
-                <b-list-group class='mb-2 d-flex' v-for="(items, index) in list" :key='index' horizontal>
+                <b-list-group class='mb-2' v-for="(items, index) in list" :key='index' horizontal>
                   <b-list-group-item @click="Delete(index)"> <b-icon icon='trash' title="Delete" variant="danger"/> </b-list-group-item>
                   <b-list-group-item @click="Edit()"> <b-icon icon='pencil-fill' title="Edit" variant="secondary" /> </b-list-group-item>
-                  <b-list-group-item class='bg-background-list w-100'>{{items.productName}}</b-list-group-item>
+                  <b-list-group-item class='w-100 bg-background-list'>{{items.productName}}</b-list-group-item>
                   <b-list-group-item class='w-25 bg-background-list'>{{items.value}}</b-list-group-item>
-                  <b-list-group-item class='text-center bg-background-list'>{{items.productParcels}}</b-list-group-item>
+                  <b-list-group-item class='w-25 text-center bg-background-list'>{{items.productParcels}}</b-list-group-item>
                 </b-list-group>
               </template>
             </div>
