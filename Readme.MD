@@ -16,7 +16,8 @@
 
 
 <h2>Description</h2>
-<i>When we have something to handle our money, it's always easy to know when you should stop spend and control your self. This is an app to show how much you are spending, how much you still have left, ~~and also you can see what you bought and the date of that purchase.~~</i>
+
+_When we have something to handle our money, it's always easy to know when you should stop spend and control your self. This is an app to show how much you are spending, how much you still have left, ~~and also you can see what you bought and the date of that purchase.~~_
 
 
 ## Test Version 1.0 - Moco - App screenshots.
