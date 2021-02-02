@@ -134,7 +134,12 @@ export default {
       this.list = setParsedMocoItems;
     },
   },
-  created() {
+  mounted() {
+    if (localStorage.getItem('@Moco-items') === null) {
+      localStorage.setItem('@Moco-items', JSON.stringify([]));
+      localStorage.setItem('@Moco-TotalPrice', 0);
+    }
+
     this.localStorageItems();
     this.sumTotal();
   },
