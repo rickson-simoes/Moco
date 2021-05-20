@@ -6,7 +6,7 @@
 
 
 [vue-url]: https://vuejs.org/
-[vue-image]: https://img.shields.io/badge/Vue-cli-green?style=for-the-badge&logo=vue.js
+[vue-image]: https://img.shields.io/badge/Vue-cli-green?style=for-the-badge&logo=Vue-dot-js
 
 [license-url]: https://opensource.org/licenses/MIT
 [license-image]: https://img.shields.io/badge/License-MIT-blue?style=for-the-badge&logo=github
